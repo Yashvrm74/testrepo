@@ -32,5 +32,5 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Deploy to S3
-        run: aws s3 sync ./dist s3://Seminarroom-frontend --delete
+        run: aws s3 sync ./dist s3://seminarroom-frontend --delete
 
